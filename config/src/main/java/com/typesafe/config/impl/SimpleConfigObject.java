@@ -480,7 +480,6 @@ final class SimpleConfigObject extends AbstractConfigObject implements Serializa
 
             int separatorCount = 0;
             String[] keys = keySet().toArray(new String[size()]);
-            Arrays.sort(keys, new RenderComparator());
             for (String k : keys) {
                 AbstractConfigValue v;
                 v = value.get(k);
